@@ -95,7 +95,7 @@ function Home() {
     const API_URI =
       process.env.NODE_ENV !== 'production'
         ? process.env.REACT_APP_API_URI || 'http://localhost:8080'
-        : 'http://asking.one:8080';
+        : 'https://asking.pussthecat.org';
     axios
       .post(`${API_URI}/poll`, pollData)
       .then(res => {

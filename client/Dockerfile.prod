@@ -1,11 +1,12 @@
 # use lightweight node as base image
-FROM node:alpine as build
+FROM node:lts-alpine as build
 
 # set working directory
 WORKDIR /app
 
 # set path
 ENV PATH /app/node_modules/.bin:$PATH
+ENV REACT_APP_API_URI https://asking.pussthecat.org
 
 # copy dependencies first, and install
 COPY package.json .

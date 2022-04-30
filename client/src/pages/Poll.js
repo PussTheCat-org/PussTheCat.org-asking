@@ -37,7 +37,7 @@ const Poll = () => {
     const API_URI =
       process.env.NODE_ENV !== 'production'
         ? process.env.REACT_APP_API_URI || 'http://localhost:8080'
-        : 'http://asking.one:8080';
+        : 'https://asking.pussthecat.org';
 
     axios
       .get(`${API_URI}/poll/${id}`)
@@ -141,7 +141,7 @@ const Poll = () => {
     const API_URI =
       process.env.NODE_ENV !== 'production'
         ? process.env.REACT_APP_API_URI || 'http://localhost:8080'
-        : 'http://asking.one:8080';
+        : 'https://asking.pussthecat.org';
     axios
       .put(`${API_URI}/poll/${id}/vote`, { option: options[index].title })
       .then(() => fetchPollResults())
