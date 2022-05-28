@@ -1,5 +1,5 @@
 # use lightweight node as base image
-FROM node-lts:alpine
+FROM node:lts-alpine
 
 # env variables
 ENV PORT 3001
