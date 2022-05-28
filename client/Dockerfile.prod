@@ -6,7 +6,6 @@ WORKDIR /app
 
 # set path
 ENV PATH /app/node_modules/.bin:$PATH
-ENV REACT_APP_API_URI https://asking.pussthecat.org
 
 # copy dependencies first, and install
 COPY package.json .
