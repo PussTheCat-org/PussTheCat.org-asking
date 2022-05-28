@@ -10,11 +10,11 @@ export default function NavbarWrapper() {
   return (
     <Navbar style={width > 500 ? styles.navbarBig : { paddingLeft: 16 }} className='navbar-main'>
       <Navbar.Brand href='/' className='navbar-brand' style={styles.navbarBrand}>
-        {process.env['APP_NAME'] ?? 'asking.one'}
+        {process.env['APP_NAME'] ?? 'asking.pussthecat.org'}
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className='justify-content-end navbar-links'>
-        <Nav.Link href='https://github.com/jdleo/asking' target='_blank' style={styles.navbarLink}>
+        <Nav.Link href='https://github.com/PussTheCat-org/PussTheCat.org-asking' target='_blank' style={styles.navbarLink}>
           Github
         </Nav.Link>
       </Navbar.Collapse>
