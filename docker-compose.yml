@@ -25,7 +25,7 @@ services:
       - DATABASE_URI=postgres://asking:changeme@asking-database:5432/asking
 
   asking-database:
-    image: postgres
+    image: postgres:14
     environment:
       - POSTGRES_PASSWORD=changeme
       - POSTGRES_USER=asking
