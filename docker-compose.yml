@@ -14,8 +14,6 @@ services:
 
   asking-api:
     build: ./api
-    links:
-      - asking-database
     depends_on:
       - asking-database
     restart: unless-stopped
