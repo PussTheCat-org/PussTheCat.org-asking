@@ -1,6 +1,7 @@
 services:
 
   asking-frontend:
+    container_name: asking-frontend
     build:
       context: ./client
       dockerfile: Dockerfile.prod
@@ -13,6 +14,7 @@ services:
       - REACT_APP_API_URI=https://asking.pussthecat.org
 
   asking-api:
+    container_name: asking-api
     build: ./api
     depends_on:
       - asking-database
@@ -23,6 +25,7 @@ services:
       - DATABASE_URI=postgres://asking:changeme@asking-database:5432/asking
 
   asking-database:
+    container_name: asking-database
     image: postgres:14
     environment:
       - POSTGRES_PASSWORD=changeme
